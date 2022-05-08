@@ -6,11 +6,11 @@
 /*   By: rgatnaou <rgatnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 21:41:50 by rgatnaou          #+#    #+#             */
-/*   Updated: 2022/04/29 13:19:23 by rgatnaou         ###   ########.fr       */
+/*   Updated: 2022/04/29 13:22:08 by rgatnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 char	*get_line(char *res)
 {

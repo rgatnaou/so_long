@@ -6,45 +6,58 @@
 #    By: rgatnaou <rgatnaou@student.42.fr>          +#+  +:+       +#+         #
 #                                                 +#+#+#+#+#+   +#+            #
 #    Created: 2022/04/12 17:35:52 by rgatnaou          #+#    #+#              #
-#    Updated: 2022/04/23 23:22:26 by rgatnaou         ###   ########.fr        #
+#    Updated: 2022/04/29 14:45:34 by rgatnaou         ###   ########.fr        #
 #                                                                              #
 # **************************************************************************** #
 
 NAME = so_long
 
-SRC = main.c \
+NAME_B = so_long_bonus
+
+SRC = so_long.c 		\
 	get_next_line.c \
-	utils.c		\
+	utils.c			\
 	check_map.c		\
-	move.c		\
-	atoi.c		\
+	move.c			\
+	itoa.c			\
 	split.c
 	
+SRC_B = bonus/bounus.c 			\
+		bonus/get_next_line.c 	\
+		bonus/utils.c			\
+		bonus/check_map.c		\
+		bonus/move_bonus.c		\
+		bonus/itoa.c			\
+		bonus/split.c			\
+		bonus/draw.c			
+
 HEADER = so_long.h
-OBJ = $(SRC:.c=.o) 
+
+HEADER_B = bonus/so_long_bonus.h
+
+OBJ = $(SRC:.c=.o)
+
+OBJ_B = $(SRC_B:.c=.o) 
 
 FLAGS = -Wall -Wextra -Werror -Imlx
 
 CC = cc
 
-%.o: %.c
+%.o: %.c 
 	$(CC) $(FLAGS) -c $< -o $@
 
 all : $(NAME)
 
-$(NAME): $(OBJ)
+$(NAME): $(OBJ) $(HEADER)
 	$(CC) $(OBJ) -lmlx -framework OpenGL -framework AppKit -o $(NAME)
 
-# ex :
-# 	./so_long
-
-#bonus :
-#
+bonus : $(HEADER_B) $(OBJ_B)
+	$(CC) $(OBJ_B) -lmlx -framework OpenGL -framework AppKit -o $(NAME_B)
 
 clean :
-	rm -rf $(OBJ)
+	rm -rf $(OBJ) $(OBJ_B)
 
 fclean : clean
-	rm -rf $(NAME)
+	rm -rf $(NAME) $(NAME_B)
 
 re : fclean all

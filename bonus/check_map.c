@@ -6,11 +6,11 @@
 /*   By: rgatnaou <rgatnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/22 13:45:50 by rgatnaou          #+#    #+#             */
-/*   Updated: 2022/04/28 22:18:05 by rgatnaou         ###   ########.fr       */
+/*   Updated: 2022/04/28 22:22:14 by rgatnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include"so_long.h"
+#include "so_long_bonus.h"
 
 char	*ft_read(char **av)
 {
@@ -78,7 +78,7 @@ int	check_car_1(char **map)
 		while (map[i][j + 1])
 		{
 			if (map[i][j] != '1' && map[i][j] != '0' && map[i][j] != 'C'
-				&& map[i][j] != 'P' && map[i][j] != 'E')
+				&& map[i][j] != 'P' && map[i][j] != 'E' && map[i][j] != 'X')
 				return (0);
 			j++;
 		}

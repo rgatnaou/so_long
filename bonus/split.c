@@ -6,11 +6,11 @@
 /*   By: rgatnaou <rgatnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/19 23:13:29 by rgatnaou          #+#    #+#             */
-/*   Updated: 2022/04/26 17:42:10 by rgatnaou         ###   ########.fr       */
+/*   Updated: 2022/04/28 22:21:55 by rgatnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 static int	count(char const *s, char c)
 {

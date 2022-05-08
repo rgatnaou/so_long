@@ -6,11 +6,11 @@
 /*   By: rgatnaou <rgatnaou@student.42.fr>          +#+  +:+       +#+        */
 /*                                                +#+#+#+#+#+   +#+           */
 /*   Created: 2022/04/18 21:55:31 by rgatnaou          #+#    #+#             */
-/*   Updated: 2022/04/29 11:59:49 by rgatnaou         ###   ########.fr       */
+/*   Updated: 2022/04/29 12:05:02 by rgatnaou         ###   ########.fr       */
 /*                                                                            */
 /* ************************************************************************** */
 
-#include "so_long.h"
+#include "so_long_bonus.h"
 
 int	ft_strnchar(char *s1, char *s2)
 {
